@@ -1,5 +1,6 @@
 // Library
 @import "./../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 
 @import 'utils/fonts';
 @import 'utils/variables';
@@ -7,3 +8,4 @@
 
 // Components
 @import 'components/header';
+@import 'components/footer';

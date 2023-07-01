@@ -1,0 +1,136 @@
+// Footer
+.footer {
+	background-color: $theme-black;
+
+	.container {
+		@include mq($from: xl) {
+			max-width: 1160px;
+		}
+	}
+
+	&__detail,
+	&__copyright,
+	&__copyright-links {
+
+		p,
+		a {
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 0.05em;
+			color: $theme-white;
+			font-weight: $font-regular;
+		}
+	}
+
+	&__wrapper {
+		padding-top: 80px;
+		margin-bottom: 35px;
+
+		@include mq($from: lg) {
+			padding-top: 65px;
+		}
+
+		@include mq($until: lg) {
+			text-align: center;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__logo {
+		object-fit: contain;
+		width: 163px;
+		height: auto;
+		margin-bottom: 10px;
+
+		@include mq($until: lg) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&__social {
+		margin-top: 30px;
+
+		@include mq($until: lg) {
+			justify-content: center;
+		}
+
+		li {
+			margin-right: 10px;
+			width: 40px;
+			height: 40px;
+			background-color: $theme-black;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $theme-white;
+		}
+	}
+
+	&__links {
+		&-wrapper {
+			@include mq($from: lg) {
+				align-items: flex-start;
+			}
+
+			@include mq($until: lg) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		&-item {
+			@include mq($until: lg) {
+				margin-bottom: 40px;
+			}
+
+			@include mq($from: lg) {
+				&:not(:last-child) {
+					margin-right: 75px
+				}
+			}
+
+			.h4 {
+				margin-bottom: 15px;
+				color: $theme-white;
+			}
+
+			a,
+			p:not(.h4) {
+				font-size: 16px;
+				line-height: 31px;
+				letter-spacing: 0.05em;
+				color: $theme-white;
+				font-weight: $font-regular;
+			}
+		}
+	}
+
+	&__copyright {
+		border-top: 1px solid #E1E1E1;
+		padding: 25px 0;
+
+		&-wrapper {
+			@include mq($until: sm) {
+				justify-content: center;
+			}
+
+			// @include mq($from: sm) {
+			// 	justify-content: space-between;
+			// }
+		}
+
+		// &-links {
+		// 	@include mq($until: lg) {
+		// 		margin-bottom: 25px;
+		// 	}
+
+		// 	li {
+		// 		&:first-child {
+		// 			margin-right: 40px;
+		// 		}
+		// 	}
+		// }
+	}
+}
