@@ -1,0 +1,20 @@
+header.header
+	.header__wrapper
+		.header__logo-wrapper
+			a(href='/' title='logo')
+				img(src='images/logo-white.svg' alt='')
+		button.header__toggle.header--mobile(aria-controls='primary-navigation' aria-expanded='false')
+			span
+			span
+			span
+			span.sr-only Menu
+		nav#primary-navigation.header__primary-nav(data-visible='false')
+			ul.header__menu-wrapper
+				li
+					a(href='#' data-page='products' class='header__nav-item header__nav-item--primary') Products
+				li
+					a(href='#' data-page='about' class='header__nav-item header__nav-item--primary') About Chitosan
+				li
+					a(href='#' data-page='the-tru-difference' class='header__nav-item header__nav-item--primary') The trū Difference
+				li
+					a(href='#' class='header__nav-item header__nav-item--cta') Contact
