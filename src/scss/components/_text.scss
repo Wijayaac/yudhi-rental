@@ -1,0 +1,13 @@
+.text {
+	&--gray {
+		background-color: #F6F6F6;
+	}
+
+	&__wrapper {
+		text-align: center;
+
+		@include mq($from: lg) {
+			max-width: 720px;
+		}
+	}
+}

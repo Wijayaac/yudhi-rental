@@ -14,15 +14,114 @@ h6,
 .h6 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
+body,
 p,
 a,
 li {
+	font-size: 16px;
 	font-family: 'Source Sans 3', sans-serif;
 	font-weight: 400;
 }
 
 ul {
 	padding-left: 0;
+}
+
+h1,
+.h1 {
+	font-size: calc(2em + 0.5em);
+	letter-spacing: 0.2rem;
+
+	@include mq($from: lg) {
+		font-size: calc(2em + 3em);
+	}
+}
+
+h2,
+.h2 {
+	font-size: calc(1.5em + 0.5em);
+	letter-spacing: 0.1rem;
+
+	@include mq($from: lg) {
+		font-size: calc(1.5em + 2.5em);
+	}
+}
+
+h3,
+.h3 {
+	font-size: calc(1.17em + 0.5em);
+	letter-spacing: 0.1rem;
+
+	@include mq($from: lg) {
+		font-size: calc(1.17em + 0.6em);
+	}
+}
+
+h4,
+.h4 {
+	font-size: calc(1em + 0.5em);
+	letter-spacing: 0.1rem;
+
+	@include mq($from: lg) {
+		font-size: calc(1em + 0.5em);
+	}
+}
+
+h5,
+.h5 {
+	font-size: calc(0.83em + 0.5em);
+	letter-spacing: 0.1rem;
+
+	@include mq($from: lg) {
+		font-size: calc(0.83em + 0.751em);
+	}
+}
+
+h6,
+.h6 {
+	font-size: calc(0.67em + 0.5em);
+	letter-spacing: 0.1rem;
+
+	@include mq($from: lg) {
+		font-size: calc(0.67em + 0.5em);
+	}
+}
+
+
+.cta {
+	font-weight: $font-bold;
+	font-size: 15px;
+	line-height: 17px;
+	padding: 13px 20px;
+	border-radius: 10px;
+	border: 1.5px solid transparent;
+	display: inline-block;
+	background-color: transparent;
+	transition: background-color 400ms ease;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--hover-color);
+	}
+
+	@include mq($from: lg) {
+		font-size: 23px;
+		line-height: 27px;
+
+	}
+
+	&--white {
+		border-color: $theme-white;
+		color: $theme-white;
+	}
+
+	&--green {
+		background-color: $theme-green;
+		border-color: $theme-green;
+		color: $theme-white;
+	}
 }
