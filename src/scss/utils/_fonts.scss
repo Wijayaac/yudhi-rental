@@ -46,7 +46,7 @@ h2,
 	letter-spacing: 0.1rem;
 
 	@include mq($from: lg) {
-		font-size: calc(1.5em + 2.5em);
+		font-size: calc(2em);
 	}
 }
 
@@ -56,7 +56,7 @@ h3,
 	letter-spacing: 0.1rem;
 
 	@include mq($from: lg) {
-		font-size: calc(1.17em + 0.6em);
+		font-size: calc(1em);
 	}
 }
 
@@ -96,22 +96,22 @@ h6,
 	font-size: 15px;
 	line-height: 17px;
 	padding: 13px 20px;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: 1.5px solid transparent;
 	display: inline-block;
 	background-color: transparent;
 	transition: background-color 400ms ease;
-	letter-spacing: 0.1rem;
 	cursor: pointer;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration: none;
 
 	&:hover {
-		background-color: var(--hover-color);
+		background-color: rgba($color: $theme-green, $alpha: 0.9)
 	}
 
 	@include mq($from: lg) {
-		font-size: 23px;
-		line-height: 27px;
-
+		font-size: 18px;
 	}
 
 	&--white {

@@ -56,12 +56,18 @@
 		position: relative;
 		z-index: 2;
 
-		h1 {
+		h1,
+		p {
 			color: $theme-white;
 		}
 
 		@include mq($from: lg) {
 			max-width: 780px;
+
+			p {
+				font-size: 20px;
+				max-width: 80%;
+			}
 		}
 
 		@include mq($until: lg) {
