@@ -12,8 +12,12 @@
   "author": "wijaya",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.9.3",
+    "@parcel/packager-xml": "^2.9.3",
     "@parcel/transformer-pug": "^2.9.3",
     "@parcel/transformer-sass": "^2.9.3",
+    "@parcel/transformer-webmanifest": "^2.9.3",
+    "@parcel/transformer-xml": "^2.9.3",
     "bootstrap": "^5.3.0",
     "parcel": "^2.9.3",
     "sass-mq": "^6.0.0"
