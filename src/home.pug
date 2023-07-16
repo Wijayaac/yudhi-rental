@@ -1,9 +1,12 @@
 extends layout.pug
 
 block content
+	//- dynamic year
 	- const currentYear = new Date().getFullYear()
 	- const establishedYear = 1998
 	- const since = currentYear - establishedYear
+	//- ctaButton
+	include components/button
 	//- banner
 	div.banner.banner--hero
 		div.banner__background
@@ -50,7 +53,7 @@ block content
 						h2.heading.heading--border Discover the Power of Big Matic Bikes
 						p Experience the thrill of riding our Big Matic motorcycles. These powerful bikes: (Nmax 155, PCX 155) provide a comfortable and exhilarating journey, allowing you to explore Bali's scenic roads with ease. Take your adventure to the next level with our PCX and Nmax bike rentals.
 						div.text-media__cta
-							a.cta.cta--green(href="#") Book Now
+							+ctaButton
 	//- text media - big matic
 	div.text-media.text-media--left.text-media--dark.section
 		div.container
@@ -64,7 +67,7 @@ block content
 						h2.heading.heading--border Efficiency and Style with Scooter
 						p Our Scooter bikes combine efficiency and style, making them perfect for city exploration and short trips. These easy-to-ride motorcycles (Vario 125, Vario Techno 125/150, Scoopy, Fazzio) offer fuel efficiency and a smooth ride, enabling you to navigate Bali's streets effortlessly.
 						div.text-media__cta
-							a.cta.cta--green(href="#") Book Now
+							+ctaButton
 	//- product listing ?
 	div.product.section
 		div.product__wrapper.container
@@ -184,7 +187,7 @@ block content
 		div.text__wrapper.container
 			h2.text__heading Start Your Adventure Today
 			div.text-media__cta
-				a.cta.cta--green(href="#") Book Now
+				+ctaButton
 	//- Term & conditions
 	div.text.text--tos.section
 		div.text__wrapper.container

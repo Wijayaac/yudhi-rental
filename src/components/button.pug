@@ -1,1 +1,2 @@
-a.cta.cta--green(href="#") Book Now
+mixin ctaButton(link = "https://api.whatsapp.com/send?phone=628179785066&text=Hi%20Made%2C%20I%20am%20interested%20to%20rent%20a%20bike!", label = "Book Now", target = true)
+	a.cta.cta--green(href=link target=target ? '_blank' : null)= label
