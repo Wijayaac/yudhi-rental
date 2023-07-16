@@ -4,6 +4,19 @@
 		background-color: #F6F6F6;
 	}
 
+	&--tos & {
+		&__wrapper {
+			text-align: left;
+
+			p,
+			li,
+			a {
+				font-size: 0.9rem;
+				color: #2e2e2e;
+			}
+		}
+	}
+
 	&__wrapper {
 		text-align: center;
 

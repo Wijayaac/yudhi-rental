@@ -51,7 +51,7 @@
 
 	&__asset {
 		position: relative;
-		padding-top: 56%;
+		padding-top: 72%;
 		width: 100%;
 
 		@include mq($until: lg) {
@@ -225,42 +225,43 @@
 	}
 
 	// Page level customization
-	.page--home & {
+	// .page--home & {
 
-		&--dark {
-			.text-media__asset {
-				padding-top: 86%;
-			}
-
-			.col-12 {
-				&:last-child {
-					@include mq($from: lg) {
-						padding: 0;
-					}
-				}
-
-				&:first-child {
-					@include mq($from: lg) {
-						padding-left: 80px;
-					}
-				}
-			}
+	&--dark {
+		.text-media__asset {
+			padding-top: 90%;
 		}
 
-		&--right {
+		.col-12 {
 			&:last-child {
-				.text-media__asset {
-					padding-top: 72%;
+				@include mq($from: lg) {
+					padding: 0;
 				}
 			}
-		}
 
-		&__icon {
-			@include mq($until: lg) {
-				max-width: 240px;
+			&:first-child {
+				@include mq($from: lg) {
+					padding-left: 80px;
+				}
 			}
 		}
 	}
+
+	&--right {
+		&:last-child {
+			.text-media__asset {
+				padding-top: 72%;
+			}
+		}
+	}
+
+	&__icon {
+		@include mq($until: lg) {
+			max-width: 240px;
+		}
+	}
+
+	// }
 
 	.page--products & {
 		&--dark {

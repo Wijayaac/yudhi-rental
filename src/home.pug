@@ -1,6 +1,9 @@
 extends layout.pug
 
 block content
+	- const currentYear = new Date().getFullYear()
+	- const establishedYear = 1998
+	- const since = currentYear - establishedYear
 	//- banner
 	div.banner.banner--hero
 		div.banner__background
@@ -14,7 +17,7 @@ block content
 	div.text.section
 		div.text__wrapper.container
 			h2.text__heading Your Gateway to Bali Adventures
-			p.text__copy With over [X years] of experience in the motorcycle rental industry, Yudhi Rental has been a trusted partner for visitors in Bali. We take pride in providing exceptional service and ensuring customer satisfaction. Our commitment to keeping our customers happy sets us apart. Choose Yudhi Rental for a memorable and hassle-free riding experience.
+			p.text__copy With over #{since} years of experience in the motorcycle rental industry, Yudhi Rental has been a trusted partner for visitors in Bali. We take pride in providing exceptional service and ensuring customer satisfaction. Our commitment to keeping our customers happy sets us apart. Choose Yudhi Rental for a memorable and hassle-free riding experience.
 	//- column icon
 	div.text-icon.section
 		div.container
@@ -28,24 +31,24 @@ block content
 					div.text-icon__item
 						img(src="images/icons/convenience.svg" alt="" loading="lazy")
 						h2.heading.h3 Convenient Pickup and Drop-off
-						p Effortlessly rent a motorcycle with our multiple convenient locations, including the airport.
+						p *Effortlessly rent a motorcycle with our multiple convenient locations, including the airport.
 				div.col-12.col-md-4
 					div.text-icon__item
 						img(src="images/icons/service.svg" alt="" loading="lazy")
 						h2.heading.h3 Exceptional Customer Support
-						p Enjoy peace of mind with our dedicated customer support, ready to assist you throughout your rental.
+						p **Enjoy peace of mind with our dedicated customer support, ready to assist you throughout your rental.
 	//- text media - small matic
 	div.text-media.text-media--right.section
 		div.container
 			div.row
 				div.col-12.col-lg-6
 					div.text-media__asset
-						img(src="images/home-matic-small.jpg" alt="" loading="lazy")
+						img(src="images/home-matic.jpg" alt="" loading="lazy")
 				div.col-12.col-lg-6
 					div.text-media__content.color-green
 						p.caption OUR BIKES
 						h2.heading.heading--border Discover the Power of Big Matic Bikes
-						p Experience the thrill of riding our Big Matic motorcycles. These powerful bikes provide a comfortable and exhilarating journey, allowing you to explore Bali's scenic roads with ease. Take your adventure to the next level with our Big Matic bike rentals.
+						p Experience the thrill of riding our Big Matic motorcycles. These powerful bikes: (Nmax 155, PCX 155) provide a comfortable and exhilarating journey, allowing you to explore Bali's scenic roads with ease. Take your adventure to the next level with our PCX and Nmax bike rentals.
 						div.text-media__cta
 							a.cta.cta--green(href="#") Book Now
 	//- text media - big matic
@@ -54,92 +57,141 @@ block content
 			div.row
 				div.col-12.col-lg-6
 					div.text-media__asset
-						img(src="images/home-matic-big.jpg" alt="" loading="lazy")
+						img(src="images/home-scooter.jpg" alt="" loading="lazy")
 				div.col-12.col-lg-6
 					div.text-media__content.color-green
 						p.caption OUR BIKES
-						h2.heading.heading--border Efficiency and Style with Normal Matic Bikes
-						p Our Normal Matic bikes combine efficiency and style, making them perfect for city exploration and short trips. These easy-to-ride motorcycles offer fuel efficiency and a smooth ride, enabling you to navigate Bali's streets effortlessly.
-						div.text-media__cta
-							a.cta.cta--green(href="#") Book Now
-	//- text media - manual
-	div.text-media.text-media--right.text-media--gray.section
-		div.container
-			div.row
-				div.col-12.col-lg-6
-					div.text-media__asset
-						img(src="images/home-manual.jpg" alt="" loading="lazy")
-				div.col-12.col-lg-6
-					div.text-media__content.color-green
-						p.caption OUR BIKES
-						h2.heading.heading--border Embrace the Thrill of Manual Transmission Bikes
-						p For motorcycle enthusiasts seeking an authentic riding experience, our Manual Transmission bikes are the perfect choice. Feel the adrenaline as you shift gears and conquer Bali's winding roads. Unleash your passion for riding with our Manual Transmission bike rentals.
+						h2.heading.heading--border Efficiency and Style with Scooter
+						p Our Scooter bikes combine efficiency and style, making them perfect for city exploration and short trips. These easy-to-ride motorcycles (Vario 125, Vario Techno 125/150, Scoopy, Fazzio) offer fuel efficiency and a smooth ride, enabling you to navigate Bali's streets effortlessly.
 						div.text-media__cta
 							a.cta.cta--green(href="#") Book Now
 	//- product listing ?
 	div.product.section
 		div.product__wrapper.container
-			h2.product__heading Pick Lorem, ipsum dolor.
+			h2.product__heading Choose Your Perfect Ride
 			div.row.justify-content-center
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-nmax.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Yamaha NMax 155
+							ul.space
+								li Powerful 155cc Engine
+								li Ideal for Long Trips
+								li Spacious Legroom
+								li Comfortable for Taller Riders
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-pcx.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Honda PCX 155
+							ul.space
+								li Efficient 155cc Engine
+								li Perfect for Long Distance Travel
+								li Ample Storage Space
+								li Comfortable and Stylish Design
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-scoopy.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Honda Scoopy (Brown + Black)
+							ul.space
+								li Stylish and Compact Design
+								li Fuel-Efficient 110cc Engine
+								li Ideal for Urban Commutes
+								li Easy Maneuverability
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-scoopy-2.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Honda Scoopy (Red + Black)
+							ul.space
+								li Stylish and Compact Design
+								li Fuel-Efficient 125cc Engine
+								li Ideal for Urban Commutes
+								li Easy Maneuverability
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-fazzio.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Yamaha Fazzio Mint
+							ul.space
+								li Agile and Versatile Performance
+								li Fuel-Efficient 125cc Engine
+								li Sleek and Sporty Design
+								li Ideal for Urban Commutes
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-fazzio-black.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Yamaha Fazzio Black
+							ul.space
+								li Agile and Versatile Performance
+								li Fuel-Efficient 125cc Engine
+								li Sleek and Sporty Design
+								li Ideal for Urban Commutes
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-vario-115.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Honda Vario 110 ESP
+							ul.space
+								li Efficient 110cc Engine
+								li Smooth and Responsive Performance
+								li Enhanced Smart Power (ESP) for Fuel Efficiency
+								li Stylish and Modern Design
 				div.col-12.col-md-4
 					.product__card
 						.product__card-image
-							img(src="images/home-manual.jpg" alt="" loading="lazy")
+							img(src="images/asset-vario-125.jpg" alt="" loading="lazy")
 						.product__card-text
-							h3.h5 Yamaha Lorem, ipsum dolor.
-							p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore! Mollitia quasi dolorum magnam blanditiis, ipsa consequatur sit id error.
+							h3.h5 Honda Vario 125 Techno (Black)
+							ul.space
+								li Powerful 125cc Engine
+								li Advanced Techno features for Enhanced Performance
+								li Sleek and Aerodynamic Design
+								li Comfortable and Spacious Seating
+				div.col-12.col-md-4
+					.product__card
+						.product__card-image
+							img(src="images/asset-vario-125-2.jpg" alt="" loading="lazy")
+						.product__card-text
+							h3.h5 Honda Vario 125 Techno (White)
+							ul.space
+								li Powerful 125cc Engine
+								li Advanced Techno features for Enhanced Performance
+								li Sleek and Aerodynamic Design
+								li Comfortable and Spacious Seating
+				div.col-12.col-md-4
+					.product__card
+						.product__card-image
+							img(src="images/asset-matic-2.jpg" alt="" loading="lazy")
+						.product__card-text
+							h3.h5 Additional Surf Board Rack
+							ul.space
+								li Universal Compatibility: Our surf boat rack fits all vehicles, so you can transport your surfboards hassle-free.
+								li Included with Every Rental: No extra charge! The surf boat rack is included when you rent our vehicles.
+								li Explore Bali's Hidden Gems: Enjoy the freedom to seek out hidden surf spots and uncover Bali's best-kept secrets.
 	//- contact
 	div.text.text--gray.section
 		div.text__wrapper.container
 			h2.text__heading Start Your Adventure Today
 			div.text-media__cta
 				a.cta.cta--green(href="#") Book Now
+	//- Term & conditions
+	div.text.text--tos.section
+		div.text__wrapper.container
+			p Please note that the charges mentioned are approximate and may vary based on traffic conditions.
+			ul.space
+				li We offer free drop-off and pickup service within 1 hour in the following areas: Canggu, Seminyak, and Dalung.
+				li For drop-off or pickup in the airport area or locations in between, there will be a charge of 150k IDR, with an estimated duration of 2 hours.
+				li For drop-off or pickup in the Uluwatu area or nearby locations, there will be a charge of 200k IDR, with an estimated duration of 2 hours.
+			p Some photos are provided by 
+				a(href="https://unsplash.com/") unsplash
