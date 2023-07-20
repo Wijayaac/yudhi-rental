@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build" # Replace this with your actual build command
+  publish = "dist" # Replace this with the directory containing your built files
+  # Add the following lines to copy the sitemap.xml and robots.txt files to the build directory
+  # Make sure to adjust the file paths based on your project structure
+  copy = [
+    { from = "src/sitemap.xml", to = "dist/sitemap.xml" },
+    { from = "src/robots.txt", to = "dist/robots.txt" }
+  ]

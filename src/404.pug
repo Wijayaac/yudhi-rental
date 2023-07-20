@@ -1,0 +1,16 @@
+extends layout.pug
+//- ctaButton
+include components/button
+
+block vars
+	- var bodyClass = 'error-page';
+block content
+	div.section.error
+		div.container
+			.error__image
+				img(src="images/404.svg" alt="" loading="lazy")
+				a(href="https://storyset.com/people") 
+			.error__content
+				h1.h4 Cannot find your request
+				div.error__cta
+					+ctaButton

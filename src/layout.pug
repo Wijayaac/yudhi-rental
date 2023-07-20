@@ -9,9 +9,10 @@ html(lang="en")
 		include components/meta.pug
 		title Yudhi Rental - Bike Rentals in Bali
 		link(rel="stylesheet" href="/src/scss/main.scss")
-	body
+		- var bodyClass = '';
+		block vars
+	body(class=bodyClass)
 		include  components/header.pug
-
 		block content
 		include components/footer.pug
 		script(type="module" src="/src/js/app.ts") 
