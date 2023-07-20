@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "rental bike static site for yudhi rental",
   "scripts": {
-    "dev": "parcel src/home.pug src/404.pug src/sitemap.xml",
-    "build": "parcel build src/home.pug src/404.pug src/sitemap.xml"
+    "dev": "parcel src/home.pug src/404.pug",
+    "build": "parcel build src/home.pug src/404.pug"
   },
   "keywords": [
     "html"
